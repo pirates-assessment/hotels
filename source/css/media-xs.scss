@@ -1,0 +1,32 @@
+@media screen and (max-width: 576px) {
+  .row {
+    margin: 15px 10px !important;
+  }
+  .single {
+    .single-img {
+      width: inherit;
+    }
+    .single-content {
+      width: inherit;
+      & > div {
+        float: none;
+      }
+      .single-content__name {
+        margin: 15px 0;
+      }
+      .single-content__book {
+        margin-bottom: 10px;
+      }
+    }
+    .single-content__stars {
+      margin: 0 auto;
+    }
+  }
+  .reviews {
+    .single-review__type {
+      span {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pejic Ivan">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search hotels</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button class="btn btn-default btn-main" id="load-hotels">Load Hotels</button>
+                <div class="loader hide"></div>
+                <div id="load-error" class="hide alert alert-danger">
+                  An error occured
+                </div>
+            </div>
+        </div>
+
+        <div id="hotels"></div>
+
+        <div class="row single hide">
+            <div class="single-img">
+                <img src="" alt="" />
+            </div>
+
+            <div class="single-content col-lg-12">
+                <div class="col-lg-4 col-xs-12 col-lg-push-right"><div class="single-content__stars"></div></div>
+                <div class="single-content__name col-lg-7 col-xs-12 pull-left">
+                    <h1></h1>
+                    <span></span>
+                </div>
+
+                <div class="col-lg-12">
+                    <article></article>
+                </div>
+
+                <div class=" col-lg-4 clearfix pull-left show-reviews-wrapper">
+                    <button class="btn btn-default show-reviews" data-hotel="">Show reviews</button>
+                </div>
+
+                <div class="single-content__book text-right">
+                    <h3 class="price"><span>123</span> &#x20ac;</h3>
+                    <span class="date"></span>
+                </div>
+            </div>
+
+            <div style="clear:both;""></div>
+
+            <div class="reviews"></div>
+
+            <div class="single-review hide">
+                <div class="single-review__type col-lg-1 col-xs-12">
+                    <span class="plus hide"><span>+</span></span>
+                    <span class="minus hide"><span>-</span></span>
+                </div>
+                <div class="single-review__content col-lg-9 col-xs-12">
+                    <span class="name"></span><br>
+                    <span class="content"></span>
+                </div>
+        
+                <div style="clear: both;"></div>
+
+                <hr />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>
+    <script src="js/lib.min.js"></script>
+</body>
+</html>
